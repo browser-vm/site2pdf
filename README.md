@@ -1,4 +1,4 @@
-# site2pdf
+# Site2PDF
 A simple interactive Python script to download an entire website as a PDF.
 ![A simple graphic, basically a logo...](./images/site2-small.png)
 
