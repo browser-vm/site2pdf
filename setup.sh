@@ -18,6 +18,10 @@ echo "📦 Updating package lists..."
 # We run this to ensure we have fresh lists
 sudo apt-get update -y
 
+# --- Step 2: Uninstall Old Playwright Versions ---
+echo "🧹 Removing old Playwright versions (if any)..."
+pip uninstall -y playwright || echo "No existing Playwright installation found. Skipping..."
+
 # --- Step 2: Install Python Dependencies ---
 echo "🐍 Installing Python libraries..."
 pip install -r requirements.txt
