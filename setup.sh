@@ -22,15 +22,15 @@ sudo apt-get update -y
 echo "🧹 Removing old Playwright versions (if any)..."
 pip uninstall -y playwright || echo "No existing Playwright installation found. Skipping..."
 
-# --- Step 2: Install Python Dependencies ---
+# --- Step 3: Install Python Dependencies ---
 echo "🐍 Installing Python libraries..."
 pip install -r requirements.txt
 
-# --- Step 3: Install Playwright Browsers ---
+# --- Step 4: Install Playwright Browsers ---
 echo "🌐 Downloading Playwright browsers..."
 playwright install chromium
 
-# --- Step 4: Install System Dependencies ---
+# --- Step 5: Install System Dependencies ---
 echo "🏗️  Installing system dependencies (this may take a minute)..."
 sudo playwright install-deps
 
